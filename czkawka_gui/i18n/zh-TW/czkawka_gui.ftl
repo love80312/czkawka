@@ -18,11 +18,11 @@ music_checking_by_tags = 標籤
 music_checking_by_content = 內容
 same_music_seconds_label = 最小片段秒數
 same_music_similarity_label = 最大差異
-music_compare_only_in_title_group = Compare within groups of similar titles
+music_compare_only_in_title_group = 按相似標題分組比較
 music_compare_only_in_title_group_tooltip =
-    When enabled, files are grouped by title and then compared to each other.
+    啟用後，檔案會根據其標題進行分組，然後只在群組內部互相比較。
     
-    With 10000 files, instead almost 100 million comparisons usually there will be around 20000 comparisons.
+    舉例來說，如果有 10,000 個檔案，原本通常需要進行近 1 億次比較，透過此方法，比較的次數將會大幅減少至大約 20,000 次。
 same_music_tooltip =
     透過以下設定，可以根據內容搜尋相似的音樂檔案：
     
@@ -269,7 +269,7 @@ bottom_move_button_tooltip =
     會將所有檔案複製到目錄中，但不會保留原始的目錄結構。
     如果試圖將兩個同名檔案移動到同一資料夾，第二個檔案將無法移動並會顯示錯誤。
 bottom_sort_button_tooltip = 根據選定的方法排序檔案/資料夾。
-bottom_compare_button_tooltip = Compare images in the group.
+bottom_compare_button_tooltip = 比較群組中的影像。
 bottom_show_errors_tooltip = 顯示/隱藏底部文字面板。
 bottom_show_upper_notebook_tooltip = 顯示/隱藏主筆記本面板。
 # Progress Window
@@ -295,13 +295,13 @@ header_about_button_tooltip = 開啟包含應用程式資訊的對話方塊。
 
 settings_number_of_threads = 使用的執行緒數
 settings_number_of_threads_tooltip = 使用的執行緒數，0 表示所有可用執行緒都將被使用。
-settings_use_rust_preview = Use external libraries instead gtk to load previews
+settings_use_rust_preview = 使用外部函式庫而非 GTK 來載入預覽
 settings_use_rust_preview_tooltip =
-    Using gtk previews will sometimes be faster and support more formats, but sometimes this could be exactly the opposite.
+    使用 GTK 預覽有時會更快且支援更多格式，但有時情況可能正好相反。
     
-    If you have problems with loading previews, you may can to try to change this setting.
+    如果您在載入預覽時遇到問題，可以嘗試更改此設定。
     
-    On non-linux systems, it is recommended to use this option, because gtk-pixbuf are not always available there so disabling this option will not load previews of some images.
+    在 非 Linux 系統 上，建議使用此選項（即使用外部函式庫），因為 gtk-pixbuf 在這些系統上不一定可用，因此停用此選項將導致無法載入某些圖片的預覽。
 settings_label_restart = 您需要重新啟動應用程式才能套用設定！
 settings_ignore_other_filesystems = 忽略其它檔案系統（僅限 Linux）
 settings_ignore_other_filesystems_tooltip =
